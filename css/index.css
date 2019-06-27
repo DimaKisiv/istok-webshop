@@ -1,82 +1,108 @@
-
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Rubik+Mono+One&display=swap');
-:root{
-    --main-color:black;
-    --accent-color:red;
+:root {
+    --main-color: black;
+    --accent-color: red;
     font-family: 'Montserrat', sans-serif;
-   --rubik-font:'Rubik Mono One', sans-serif;
-    scroll-behavior:smooth;
+    --rubik-font: 'Rubik Mono One', sans-serif;
+    scroll-behavior: smooth;
 }
 
-h1,h2,h3,h4,h5,h6,header,main,footer,nav,p,li{
-    margin:0;
-    padding:0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+main,
+footer,
+nav,
+p,
+li {
+    margin: 0;
+    padding: 0;
 }
 
-body{
-    max-width:980px;
-    margin:auto;
+body {
+    max-width: 980px;
+    margin: auto;
 }
 
-.top-header .top-menu{
-    display:flex;
-    padding:0;
-    justify-content:space-around;
-    flex:1;
+.top-header nav {
+    background-image: linear-gradient(#afafaf, #ffffff);
 }
 
-.top-header .top-menu li{
-    list-style-type:none;
+.top-header .top-menu {
+    display: flex;
+    padding: 0;
+    justify-content: space-around;
+    flex: 1;
 }
 
-.top-header .top-menu li a{
+.top-header .top-menu li {
+    list-style-type: none;
+}
+
+.top-header .top-menu li a {
     text-transform: uppercase;
-    text-decoration:none;
-    color:var(--main-color);
+    text-decoration: none;
+    color: var(--main-color);
     padding: 2px;
-    border:1px solid white;
 }
 
-.top-header .top-menu li a:hover{
-   border: 1px solid var(--accent-color);
+.top-header .top-menu li a:hover {
+    border-bottom: 2px solid black;
 }
 
 .top-header .logo {
-    width:100px;
+    width: 100px;
 }
 
-@media (min-width:600px){
-    .top-header nav{
-        display:flex;
-        align-items:center;
+.top-header img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+@media (min-width:600px) {
+    .top-header nav {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width:375px) {
+    .top-header .top-menu a{
+        font-size:14px;
+    }
+}
+@media (max-width:330px) {
+    .top-header .top-menu a{
+        font-size:13px;
     }
 }
 
 
 
-.top-header .jumbotron{
-    background-image:url(../img/grass.jpg);
-    background-position:center;
-    background-size:cover;
-    min-height:300px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    flex-direction:column;
-}
-.top-header .jumbotron h2{
-      color: var(--accent-color);
-      font-family: 'Rubik Mono One', sans-serif;
-      font-size:1.6em;
-      text-align:center;
-      max-width:880px;
+.top-header .jumbotron {
+    background-image: url(../img/grass.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-@media (min-width: 600px) {
-    .top-header .jumbotron {
-        min-height: 500px;
-    }
+.top-header .jumbotron h2 {
+    color: #ffee56;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 1.6em;
+    text-align: center;
+    max-width: 880px;
 }
+
 
 .button {
     display: inline-block;
@@ -108,46 +134,47 @@ body{
     background-color: black;
     color: white;
 }
+
 @media all and (max-width:30em) {
     .button {
         margin: 0.4em auto;
     }
 }
 
-#benefits{
-    text-align:center;
-    margin:auto;
-    text-decoration:uppercase;
+.benefits-section h2 {
+    text-align: center;
+    margin: auto;
+    text-decoration: uppercase;
 }
 
-.benefit-list .benefit-card img{
-    width:100px;
-    display:block;
-    margin:auto;
+.benefit-list .benefit-card img {
+    width: 100px;
+    display: block;
+    margin: auto;
 }
 
-.benefit-list .benefit-card h3{
+.benefit-list .benefit-card h3 {
     text-align: center;
 }
 
-.benefit-list .benefit-card .button-container{
-    display:flex;
-    justify-content:space-around;
+.benefit-list .benefit-card .button-container {
+    display: flex;
+    justify-content: space-around;
 }
 
-.benefit-list .benefit-card{
+.benefit-list .benefit-card {
     padding: 2px;
 }
 
-.benefit-list{
-        display:grid;
-        grid-template-columns:1fr 1fr;
-        grid-gap:2px;
+.benefit-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2px;
 }
 
 
-@media (min-width:600px){
-    .benefit-list{
-        grid-template-columns:repeat(4,1fr);
+@media (min-width:600px) {
+    .benefit-list {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
