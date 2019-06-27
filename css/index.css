@@ -281,6 +281,10 @@ body {
     margin: 20px;
 }
 
+.footer .map h1{
+    display:none
+}
+
 .footer .map img {
     width: 100%;
 }
