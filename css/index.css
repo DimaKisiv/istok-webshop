@@ -141,9 +141,13 @@ body {
     }
 }
 
+.benefits-section{
+    background-color:red;
+}
+
 .benefits-section h2 {
     text-align: center;
-    margin: auto;
+    padding: 20px;
     text-decoration: uppercase;
 }
 
@@ -177,4 +181,31 @@ body {
     .benefit-list {
         grid-template-columns: repeat(4, 1fr);
     }
+}
+
+
+
+.feedback-section{
+ background-color:grey;
+}
+
+.feedback-section .feedback-story{
+    padding-top:10px;
+}
+
+.feedback-section h2{
+    padding:20px;
+    text-align:center;
+}
+
+.feedback-section .feedback-story p{
+    margin-left: 10px;
+}
+
+.feedback-section .feedback-story img{
+    width:100%;
+}
+
+.feedback-section .feedback-story h3{
+    margin:10px;
 }
