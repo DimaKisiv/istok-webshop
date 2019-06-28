@@ -29,6 +29,10 @@ body {
     background-image: linear-gradient(#afafaf, #ffffff);
 }
 
+.top-header nav p{
+    margin:10px;
+}
+
 .top-header .top-menu {
     display: flex;
     padding: 0;
