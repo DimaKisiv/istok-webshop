@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Rubik+Mono+One&display=swap');
 :root {
-    --main-color: black;
-    --accent-color: red;
     font-family: 'Montserrat', sans-serif;
-    --rubik-font: 'Rubik Mono One', sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -46,7 +43,7 @@ body {
 .top-header .top-menu li a {
     text-transform: uppercase;
     text-decoration: none;
-    color: var(--main-color);
+    color: black;
     padding: 2px;
 }
 
@@ -149,7 +146,7 @@ body {
 .benefits-section h2 {
     text-align: center;
     padding: 20px;
-    text-decoration: uppercase;
+    text-transform: uppercase;
 }
 
 .benefit-list .benefit-card img {
@@ -227,7 +224,7 @@ body {
 .companies-section h2 {
     text-align: center;
     padding: 20px;
-    text-decoration: uppercase;
+    text-transform: uppercase;
 }
 
 .company-list .company-card img {
